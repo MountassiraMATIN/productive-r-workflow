@@ -1,0 +1,32 @@
+{
+    "id": "3E309D9E",
+    "path": "C:/Users/mount/OneDrive/Desktop/productive-r-workflow/test.qmd",
+    "project_path": "test.qmd",
+    "type": "quarto_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1716809711280.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,0",
+        "scrollLine": "11",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "55:380"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1716809969,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1716809969927,
+    "read_only": false,
+    "read_only_alternatives": []
+}

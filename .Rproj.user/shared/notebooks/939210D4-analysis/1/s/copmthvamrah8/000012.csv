@@ -1,0 +1,2 @@
+"0","# add interactive table"
+"0","DT::datatable(data, filter = ""top"")"

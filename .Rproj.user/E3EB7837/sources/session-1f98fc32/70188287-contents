@@ -1,0 +1,38 @@
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readxl)
+library(magrittr)
+
+# Read data
+data <- readRDS("Input/clean_data.rds")
+
+# Summarize the data
+summary(data)
+
+# Clean data and calculate mean bill lengths
+penguins_clean <- data %>%
+  na.omit()
+
+mean_bill_length <- penguins_clean %>%
+  filter(species == "Adelie") %>%
+  group_by(island) %>%
+  summarize(mean_bill_length_mm = round(mean(bill_length_mm), 2))
+
+print(mean_bill_length)
+
+# Plot using ggplot2
+ggplot(penguins_clean, aes(x = bill_length_mm, y = bill_depth_mm, color = species, shape = species)) +
+  geom_point() +
+  labs(title = "Penguin Bill Dimensions", x = "Bill Length (mm)", y = "Bill Depth (mm)") +
+  theme_minimal() +
+  scale_color_manual(values = c("Adelie" = "red", "Chinstrap" = "green", "Gentoo" = "blue")) +
+  scale_shape_manual(values = c("Adelie" = 16, "Chinstrap" = 17, "Gentoo" = 18)) +
+  theme(legend.title = element_blank())
+
+
+# Use the function
+source(file="R/functions.R")
+create_scatterplot(data, "Adelie", "Torgersen")
+
+

@@ -1,0 +1,3 @@
+"0","# Read data"
+"0","data <- readRDS(""../Input/clean_data.rds"")"
+"0",""
